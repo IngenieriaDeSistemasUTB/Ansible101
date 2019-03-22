@@ -3,7 +3,7 @@
 ## Primer paso
 Debes construir un docker personalizado que incluye el servidor openssh
 
-    docker build -t server:16.04 .
+    docker build -t server:18.04 .
 
 En el paso anterior debes verificar el ID de la imágen que se creó y seleccionarla para los pasos a continuación.
 
@@ -13,11 +13,11 @@ Ahora debes crear un conjunto de maquinas para pruebas, se crearán automáticam
 
     0.0.0.0:6379->6379/tcp, 0.0.0.0:2223->22/tcp   server03
     0.0.0.0:3306->3306/tcp, 0.0.0.0:2222->22/tcp   server02
-    0.0.0.0:2221->22/tcp, 0.0.0.0:8000->80/tcp     server01
+    0.0.0.0:8000->80/tcp,   0.0.0.0:2221->22/tcp   server01
 
 Si lo deseas puedes modificar el archivo `create_dockers.sh` ajustando los parametros que consideres necesarios para lanzar los dockers que se ajusten al experimento que diseñes.
 
-    ../create_dockers.sh server:16.04
+    ../create_dockers.sh server:18.04
 
 ## Tercer paso, configuración de alias
 Opción 1: edita el archivo `/etc/hosts` y adiciona 3 alias a localhost

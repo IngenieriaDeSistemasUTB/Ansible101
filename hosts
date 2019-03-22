@@ -1,8 +1,8 @@
 [web]
-server01 ansible_port=2221 ansible_ssh_private_key_file=../key.private
+server01 ansible_port=2221 ansible_ssh_private_key_file=../key.private ansible_python_interpreter=/usr/bin/python3
 
 [sql]
-server02 ansible_port=2222 ansible_ssh_private_key_file=../key.private
+server02 ansible_port=2222 ansible_ssh_private_key_file=../key.private ansible_python_interpreter=/usr/bin/python3
 
 [nosql]
-server03 ansible_port=2223 ansible_ssh_private_key_file=../key.private
+server03 ansible_port=2223 ansible_ssh_private_key_file=../key.private ansible_python_interpreter=/usr/bin/python3

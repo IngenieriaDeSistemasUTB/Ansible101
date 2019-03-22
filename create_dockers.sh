@@ -16,6 +16,6 @@ echo
 echo "----------------------"
 echo "     Confirmando      "
 echo "----------------------"
-docker ps
+docker container ls
 echo
 echo "----------------------"
